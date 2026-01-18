@@ -1,0 +1,34 @@
+
+.inter-google-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* share style  */
+
+
+
+
+
+
+/* main style  */
+
+.nav-section {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 36px 0;
+    /* background-color: #1A0B2E; */
+}
+.nav-a {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+.nav-a a {
+    text-decoration: none;
+}
