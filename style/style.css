@@ -8,7 +8,14 @@
     padding: 0;
 }
 /* share style  */
-
+.btn {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+    border-radius: 50px;
+}
 
 
 
@@ -16,13 +23,37 @@
 
 /* main style  */
 
+
+/* NAV  */
 .nav-section {
     max-width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     padding: 36px 0;
-    /* background-color: #1A0B2E; */
+    background-color: #1A0B2E;
+    /* color: #ffffff; */
+}
+.brand h2 {
+    color: #ffffff;
+}
+.brand h2 span {
+    background: linear-gradient(
+    hsla(55, 92%, 61%, 1),
+    hsla(318, 97%, 51%, 1),
+    hsla(275, 100%, 49%, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#nav-toggle {
+    display: none;
+}
+.hamburger {
+    color: #ffffff;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 .nav-a {
     display: flex;
@@ -31,6 +62,7 @@
 }
 .nav-a a {
     text-decoration: none;
+    color: #ffffff;
 }
 .hide {
     display: none;
@@ -119,6 +151,33 @@
 
 
 @media screen and (max-width: 576px) {
+/* NAV  */
+     .hamburger {
+        display: block;
+     }
+     .nav-a {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #1b0a2f;
+     }
+     .nav-a a {
+        padding: 16px;
+        border-top: 1px solid  rgba(255,255,255,0.1);
+     }
+     #nav-toggle:checked ~ .nav-a {
+        display: flex;
+     }
+     .btn {
+        display: none;
+     }
+
+
+
+/* SERVICE  */
     .service-container {
         grid-template-areas: 
         "audio"
@@ -153,24 +212,21 @@
         padding: 40px;
         align-items: center;
         display: inline-block;
-        /* max-width: 1200px; */
-        /* margin: 0 auto; */
     }
     .service-title {
         font-size: 1.5rem;
         font-weight: 700;
         color: #ffffff;
         margin: 16px 0;
-        /* width: 300px; */
     }
     .service-description {
         font-size: 1rem;
         line-height: 1.5rem;
         color: #ffffff81;
-        /* width: 300px; */
     }
     .service-image {
         width: 60px;
         height: 60px;
     }
+
     }
