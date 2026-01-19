@@ -32,3 +32,145 @@
 .nav-a a {
     text-decoration: none;
 }
+.hide {
+    display: none;
+}
+
+
+/* service related style  */
+.service-main-container {
+    color: #ffffff;
+    background-color: #230E3D;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 200px 120px;
+}
+
+.audio-service {
+    grid-area: audio;
+}
+.mobile-service {
+    grid-area: mobile;
+}
+.global-service {
+    grid-area: global;
+}
+.exclusive-service {
+    grid-area: exclusive;
+}
+.resources-service {
+    grid-area: resources;
+}
+
+.service-container {
+    display: grid;
+    gap: 25px;
+    width: 100%;
+    grid-template-areas: 
+    "audio audio mobile mobile mobile mobile"
+    "audio audio mobile mobile mobile mobile"
+    "audio audio global global global global"
+    "audio audio global global global global"
+    "exclusive exclusive exclusive exclusive resources resources"
+    "exclusive exclusive exclusive exclusive resources resources"
+    "exclusive exclusive exclusive exclusive resources resources"
+}
+
+.service-header {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.for-padding {
+    padding-top: 65px;
+}
+.service-box .only-for {
+    width: 100px;
+    height: 100px;
+}
+.service-box {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 50px;
+    padding: 40px;
+    align-items: center;
+    display: inline-block;
+
+}
+.service-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 16px 0;
+
+}
+.service-description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff81;
+
+}
+.service-image {
+    width: 60px;
+    height: 60px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .service-container {
+        grid-template-areas: 
+        "audio"
+        "mobile"
+        "global"
+        "exclusive"
+        "resources";
+        width: 100%;
+    }
+    .service-main-container {
+        padding: 20px;
+    }
+    
+    
+    .service-header {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .for-padding {
+        padding-top: 5px;
+    }
+    .service-box .only-for {
+        width: 100px;
+        height: 100px;
+    }
+    .service-box {
+        background-color: rgba(53, 17, 101, 0.4);
+        border-radius: 20px;
+        padding: 40px;
+        align-items: center;
+        display: inline-block;
+        /* max-width: 1200px; */
+        /* margin: 0 auto; */
+    }
+    .service-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 16px 0;
+        /* width: 300px; */
+    }
+    .service-description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #ffffff81;
+        /* width: 300px; */
+    }
+    .service-image {
+        width: 60px;
+        height: 60px;
+    }
+    }
