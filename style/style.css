@@ -450,6 +450,23 @@ footer {
 .list-text img {
     margin-right: 8px;
 }
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "audio"
+      "mobile"
+      "global"
+      "exclusive"
+      "resources";
+    width: 100%;
+    gap: 20px;
+  }
+  .service-main-container {
+    padding: 100px 100px;
+  }
+}
 
 
 @media screen and (max-width: 576px) {
