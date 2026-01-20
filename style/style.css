@@ -9,6 +9,9 @@
     box-sizing: border-box;
 }
 /* share style  */
+body {
+    background-color: #1A0B2E;
+}
 .btn {
     color: #ffffff;
     font-size: 1rem;
@@ -17,6 +20,10 @@
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
     border-radius: 50px;
     cursor: pointer;
+    border: none;
+}
+.btn:hover {
+    
 }
 .service-description , .card-description {
     font-size: 1rem;
@@ -48,6 +55,7 @@
     width: 100%;
     margin: 0 auto;
     background-color: #1A0B2E;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 .nav-container {
     max-width: 1200px;
@@ -88,6 +96,97 @@
 }
 .hide {
     display: none;
+}
+/* hero related style  */
+
+.hero-main-container {
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 770px;
+
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.new {
+    border: 1px solid #00FF88;
+    border-radius: 30px;
+    padding: 8px 16px;
+    background-color: #00FF88;
+    position: relative;
+    left: 124px;
+    bottom: 370px;
+    font-weight: 600;
+    animation: pulse 1.5s ease-in-out infinite;
+
+}
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 101px 0;
+}
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.hero-logo-circle {
+    width: 68%;
+    position: relative;
+    left: 61px;
+    bottom: 20px;
+    animation: spin 1s linear infinite;
+
+}
+.hero-logo-mic {
+    position: relative;
+    left: -190px;
+    bottom: 120px;
+}
+
+.hero-title {
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-top: 40px;
+}
+.hero-description {
+    font-size: 1rem;
+    color: #ffffff81;
+    margin-bottom: 24px;
+    margin-top: 8px;
+}
+.hero-btn {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 16.531%,rgba(251, 9, 180, 1) 49.819%,rgba(145, 0, 248, 1) 81.648%);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+.btn-only {
+    background: transparent;
+    border: 2px solid #00FF88;
+    color: #00FF88;
 }
 /* about related style  */
 .about-main-container {
@@ -174,8 +273,6 @@
     "exclusive exclusive exclusive exclusive resources resources"
 }
 
-
-
 .service-box .only-for {
     width: 100px;
     height: 100px;
@@ -191,7 +288,6 @@
     width: 100%;
 
 }
-
 /* feature episode related style  */
 .feature-episode-container {
     color: #ffffff;
@@ -300,6 +396,7 @@
     border-color: #E02C6D;
     color: #E02C6D;
 }
+
 /* footer related style  */
 footer {
     position: relative;
@@ -361,17 +458,88 @@ footer {
         padding: 16px;
         border-top: 1px solid  rgba(255,255,255,0.1);
      }
+     .nav-container {
+        justify-content: space-around;
+     }
      #nav-toggle:checked ~ .nav-a {
         display: flex;
      }
      .btn {
         display: none;
      }
+/* HERO  */
+
+.hero-main-container {
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 100%;
+    height: auto;
+}
+.new {
+    border: 1px solid #00FF88;
+    border-radius: 30px;
+    padding: 3px 6px;
+    background-color: #00FF88;
+    position: relative;
+    left: -30px;
+    bottom: 123px;
+    font-weight: 500;
+    font-size: 8px;
+
+}
+.hero-info {
+    position: relative;
+    top: -14px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+.hero-logo-circle {
+    width: 25%;
+    position: relative;
+    left: 36px;
+    bottom: 37px;
+
+}
+.hero-logo-mic {
+        position: relative;
+        left: -32px;
+        bottom: 70px;
+        width: 7%;
+}
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-top: 0px;
+}
+.hero-description {
+    font-size: 1rem;
+    color: #ffffff81;
+    margin-bottom: 24px;
+    margin-top: 8px;
+}
+.btn-only {
+    background: transparent;
+    border: 2px solid #00FF88;
+    color: #00FF88;
+}
+
+
+
 
 /* ABOUT  */
  .about-main-container {
     background-color: #1A0B2E;
-    padding: 40px 20px;
+    padding: 20px 20px 40px;
 } 
 
  .about-title {
@@ -384,6 +552,9 @@ footer {
     max-width: 350px;
     margin: 0 auto;
     text-align: center;
+}
+.display-none {
+    display: none;
 }
 .about-description {
     font-size: 1rem;
